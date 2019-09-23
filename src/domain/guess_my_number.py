@@ -1,6 +1,6 @@
 from src.domain.display import Display
 from src.domain.guesses import Guesses
-import
+
 
 class GuessMyNumber:
     def __init__(self, number_to_guess: int, guesses: Guesses, display: Display):
@@ -42,4 +42,3 @@ class GuessMyNumber:
             self.display.show("Parabéns! Você acertou!")
         else:
             self.display.show("Infelizmente você errou todas as tentativas.")
-            self.display.show("O número era: {:.0f}".format())
